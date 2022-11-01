@@ -9,6 +9,7 @@ const asyncCallback = (cb: Function) => {
 const asyncPromise = () => new Promise((resolve) => resolve(true));
 
 describe("async code", () => {
+    
   test("example of async with callback", (done) => {
     asyncCallback((result: boolean) => {
       expect(result).toBe(true);
