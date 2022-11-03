@@ -3,8 +3,6 @@
         "react-app",
         "airbnb",
         "plugin:jsx-a11y/recommended",
-        "prettier",
-        "prettier/react",
         "eslint-config-prettier"
     ],
     "plugins": [
@@ -12,7 +10,6 @@
         "prettier"
     ],
     "rules": {
-        "allowTestingFrameworkSetupHook": true,
         "react/jsx-filename-extension": [
             1,
             {
