@@ -3,19 +3,44 @@
         "react-app",
         "airbnb",
         "plugin:jsx-a11y/recommended",
+        "prettier",
         "eslint-config-prettier"
     ],
     "plugins": [
         "jsx-a11y",
         "prettier"
     ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            }
+        }
+    },
     "rules": {
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
         "react/jsx-filename-extension": [
             1,
             {
                 "extensions": [
                     ".js",
-                    ".jsx"
+                    ".jsx",
+                    ".tsx",
+                    ".ts"
                 ]
             }
         ]
